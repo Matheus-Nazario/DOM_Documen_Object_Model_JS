@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>eventos com o DOM</title>
+    <style>
+        body{
+            background-color:#dfedff ;
+            color:salmon;
+            }
+            div#area{
+                font: 30pt Arial;
+                background-color: white;
+                color: salmon;
+                width: 300pt;
+                height: 300pt;
+                line-height: 300pt;
+                text-align: center;
+            }
+    </style>
+</head>
+<body>
+    <h1> Interação com o matheus </h1>
+    <div id ="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> 
+      Interaja aqui!!!!
+    </div>
+    <script>
+        var a = window.document.getElementById("area")
+        function clicar () {
+            var a = window.document.getElementById("area")
+            a.innerText= "Clicou!"
+            a.style.background = "Black"
+            
+        }
+        function entrar() {
+            a.innerText= "Entrou!"
+            a.style.background = "red"
+        }
+        function sair() {
+            a.innerText="Saiu!"
+            a.style.background = "white"
+            
+        }
+    </script>
+    
+</body>
+</html>
